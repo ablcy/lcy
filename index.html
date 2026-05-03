@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ablcy - GitHub Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #fff;
+            margin-bottom: 16px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+
+        .project-name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+
+        .project-desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 16px;
+            font-size: 14px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .project-link:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .color-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .color-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .color-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .color-4 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .color-5 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .color-6 { background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); }
+        .color-7 { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
+        .color-8 { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); }
+        .color-9 { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
+        .color-10 { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
+        .color-11 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ablcy</h1>
+            <p class="subtitle">Welcome to my GitHub Projects</p>
+        </header>
+
+        <div class="projects-grid">
+            <div class="project-card" onclick="window.open('https://ablcy.github.io', '_blank')">
+                <div class="project-icon color-1">🌐</div>
+                <div class="project-name">ablcy.github.io</div>
+                <div class="project-desc">Personal homepage and portfolio</div>
+                <a href="https://ablcy.github.io" class="project-link" target="_blank">Visit →</a>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/ablcy/bookmark', '_blank')">
+                <div class="project-icon color-2">🔖</div>
+                <div class="project-name">bookmark</div>
+                <div class="project-desc">Bookmark management tool</div>
+                <a href="https://github.com/ablcy/bookmark" class="project-link" target="_blank">Visit →</a>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/ablcy/lcy', '_blank')">
+                <div class="project-icon color-3">🏠</div>
+                <div class="project-name">lcy</div>
+                <div class="project-desc">Project navigation page</div>
+                <a href="https://github.com/ablcy/lcy" class="project-link" target="_blank">Visit →</a>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/ablcy/mindflower', '_blank')">
+                <div class="project-icon color-4">🌸</div>
+                <div class="project-name">mindflower</div>
+                <div class="project-desc">Creative thinking tool</div>
+                <a href="https://github.com/ablcy/mindflower" class="project-link" target="_blank">Visit →</a>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/ablcy/mindgarden', '_blank')">
+                <div class="project-icon color-5">🧠</div>
+                <div class="project-name">mindgarden</div>
+                <div class="project-desc">Mind mapping and notes</div>
+                <a href="https://github.com/ablcy/mindgarden" class="project-link" target="_blank">Visit →</a>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/ablcy/edu', '_blank')">
+                <div class="project-icon color-6">📚</div>
+                <div class="project-name">edu</div>
+                <div class="project-desc">Educational resources</div>
+                <a href="https://github.com/ablcy/edu" class="project-link" target="_blank">Visit →</a>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/ablcy/game', '_blank')">
+                <div class="project-icon color-7">🎮</div>
+                <div class="project-name">game</div>
+                <div class="project-desc">Fun games collection</div>
+                <a href="https://github.com/ablcy/game" class="project-link" target="_blank">Visit →</a>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/ablcy/health', '_blank')">
+                <div class="project-icon color-8">💪</div>
+                <div class="project-name">health</div>
+                <div class="project-desc">Health and fitness tracker</div>
+                <a href="https://github.com/ablcy/health" class="project-link" target="_blank">Visit →</a>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/ablcy/fire', '_blank')">
+                <div class="project-icon color-9">🔥</div>
+                <div class="project-name">fire</div>
+                <div class="project-desc">Productivity tools</div>
+                <a href="https://github.com/ablcy/fire" class="project-link" target="_blank">Visit →</a>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/ablcy/travel', '_blank')">
+                <div class="project-icon color-10">✈️</div>
+                <div class="project-name">travel</div>
+                <div class="project-desc">Travel planning assistant</div>
+                <a href="https://github.com/ablcy/travel" class="project-link" target="_blank">Visit →</a>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/ablcy/ai', '_blank')">
+                <div class="project-icon color-11">🤖</div>
+                <div class="project-name">ai</div>
+                <div class="project-desc">AI experiments and tools</div>
+                <a href="https://github.com/ablcy/ai" class="project-link" target="_blank">Visit →</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2024 ablcy. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
